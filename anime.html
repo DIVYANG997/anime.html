@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boy Animation</title>
+</head>
+
+<style>
+
+     *{
+        margin: 0;
+    } 
+
+    /* body{ 
+        position: relative;
+    } */
+
+    
+
+    .main{
+        /* display: flex; 
+        gap: 75px;
+        margin: 0px px;  */
+        position: relative;
+        background-color: cadetblue;
+        width: 100%;
+        height: 600px;
+    }
+
+    .center{
+        background-color: coral;
+        width: 40px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 940px; 
+        animation: door 2.2s infinite;
+        animation-delay: 0.9s;
+    }
+
+    
+    @keyframes boy1{
+        0%{transform: translateX(0px);}
+        50%{transform: translateX(530px);}
+        100%{transform: translateX(1250px);}
+    }
+
+    @keyframes door{
+        0%{height:100%}
+        100%{height:0}
+    }
+
+
+    .boy{
+        position: absolute;
+        top: 150px;
+        background: none;
+        animation: boy1 8s ;
+    }
+
+
+    
+</style>
+<body>
+
+    <div class="main">
+
+    <div class="center"></div>
+
+
+    <div class="boy">
+        <img src="./Images/walking-boy3.gif" alt="boy" style="height: 450px;">
+    </div>
+
+    </div>
+</body>
+</html>
